@@ -138,6 +138,7 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
     }
 
     function gameRestart() {
+        createjs.Sound.stop();
         _gameBBList = [];
         _gameBBListIndex = 0;
         _gameScore = 0;
